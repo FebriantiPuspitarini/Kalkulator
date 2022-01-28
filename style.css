@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --bg: #00153bc2;
+    --color: #000;
+    --hover_color: #e7e7e7;
+    --sec_bg: #EFEBEB;
+}
+
+body[data-theme="theme-2"] {
+    --bg: black;
+    --color: white;
+    --hover_color: #424242;
+    --sec_bg: #222222;
+}
+
+body {
+    background: var(--bg);
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.calculator {
+    width: 300px;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    width: 100%;
+}
+
+tr .colspan{
+  letter-spacing: 9px;
+}
+
+td {
+  color: white;
+}
+
+.switchBox {
+    color: white;
+    background: #354964;
+    border-radius: 20px;
+    height: 25px;
+    margin-left: 30px;
+    position: relative;
+    width: 60px;
+}
+
+.switchBox input {
+    cursor: pointer;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    -webkit-appearance: none;
+}
+
+.switchBox .box {
+    background: red;
+    border-radius: 20px;
+    height: 80%;
+    left: 4px;
+    position: absolute;
+    top: 10%;
+    transition: all .4s;
+    width: 20px;
+}
+
+.switchBox input:checked ~ .box {
+  background: #ff8303;
+  left: 60%;
+}
+
+.input #display {
+    background-color: #212e3b;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    height: 60px;
+    outline: none;
+    font-size: 1.5rem;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.frame {
+    background: #2c3d4e;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.row {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.row input {
+    cursor: pointer;
+    width: 23.6%;
+    margin-bottom: 5px;
+    height: 40px;
+    background: var(--sec_bg);
+    color: var(--color);
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.397);
+}
+
+.row input:hover {
+  box-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 2px #fff;
+}
+
+input.span-two {
+  width: 132px;
+}
+
+.active {
+    animation: anim .4s;
+}
+
+@keyframes anim {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        background: var(--hover_color);
+    }
+}

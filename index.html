@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body data-theme="">
+    <div class="main">
+        <div class="calculator">
+            <div class="header">
+
+                <table>
+                    <tr>
+                        <td colspan="3" class="colspan" align="right" cellpadding="2">1 2</td>
+                    </tr>
+                    <tr>
+                        <td>calc</td>
+                        <td width="600px" align="right">
+                            <h6>THEME</h6>
+                        </td>
+                        <td>
+                            <div class="switchBox">
+                                <input type="checkbox" id="switch" class="switch" value="switch">
+                                <div class="box"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="input">
+                <input type="text" id="display" disabled>
+            </div>
+
+            <br>
+
+            <div class="frame">
+                <div class="row">
+                    <input type="button" value="7">
+                    <input type="button" value="8">
+                    <input type="button" value="9">
+                    <input style="background: #6087BB; color: white;" type="button" value="DEL">
+
+                    <input type="button" value="4">
+                    <input type="button" value="5">
+                    <input type="button" value="6">
+                    <input type="button" value="+">
+
+                    <input type="button" value="1">
+                    <input type="button" value="2">
+                    <input type="button" value="3">
+                    <input type="button" value="-">
+
+                    <input type="button" value=".">
+                    <input type="button" value="0">
+                    <input type="button" value="/">
+                    <input type="button" value="*">
+
+                    <input style="background: #6087BB; color: white;" class="span-two" type="button" value="RESET">
+                    <input style="background: red; color: white;" class="span-two" type="button" value="=">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
